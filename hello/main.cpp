@@ -4,6 +4,8 @@
 int main() {
     std::int32_t altitude_m = 120;
     int x = 0;
+if(battery_pct < 20){
+std::cout << "LOW BATTERY" << endl;
     std::uint8_t battery_pct = 255; battery_pct = battery_pct + 1;
     std::cout << x << "\n";
     std::cout << "Hello, VTOL! altitude = " << altitude_m << " m\n";
